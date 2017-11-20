@@ -1,0 +1,11 @@
+[user]
+	name = Karan M Rajpal
+	email = rajpal.karan73@gmail.com
+[core]
+	pager = 
+	autocrlf = input
+	editor = /bin/nano
+
+### VNEI ###
+[credential]
+	helper = cache --timeout=3600
