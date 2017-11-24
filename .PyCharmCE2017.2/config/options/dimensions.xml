@@ -1,0 +1,22 @@
+<application>
+  <component name="DimensionService">
+    <location key="FileChooserDialogImpl.0.0.1920.1080" x="864" y="242" />
+    <location key="WELCOME_SCREEN.0.0.1920.1080" x="960" y="473" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.1920.1080" x="671" y="372" />
+    <location key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser.0.0.1920.1080" x="538" y="166" />
+    <location key="bookmarks.0.0.1920.1080" x="962" y="363" />
+    <location key="SettingsEditor.0.0.1920.1080" x="529" y="259" />
+    <size key="FileChooserDialogImpl.0.0.1920.1080" width="424" height="523" />
+    <size key="GridCell.Tab.0.left.0.0.1920.1080" width="1920" height="268" />
+    <size key="GridCell.Tab.0.center.0.0.1920.1080" width="1920" height="268" />
+    <size key="GridCell.Tab.0.right.0.0.1920.1080" width="1920" height="268" />
+    <size key="GridCell.Tab.0.bottom.0.0.1920.1080" width="1920" height="268" />
+    <size key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser.0.0.1920.1080" width="834" height="779" />
+    <size key="bookmarks.0.0.1920.1080" width="756" height="344" />
+    <size key="GridCell.Tab.1.left.0.0.1920.1080" width="1920" height="350" />
+    <size key="GridCell.Tab.1.center.0.0.1920.1080" width="1920" height="350" />
+    <size key="GridCell.Tab.1.right.0.0.1920.1080" width="1920" height="350" />
+    <size key="GridCell.Tab.1.bottom.0.0.1920.1080" width="1920" height="350" />
+    <size key="SettingsEditor.0.0.1920.1080" width="1083" height="692" />
+  </component>
+</application>
