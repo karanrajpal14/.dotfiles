@@ -1,9 +1,0 @@
-<application>
-  <component name="ToolbarClicksCollector">
-    <counts>
-      <entry action="Debug@NavBarToolbar" count="1" />
-      <entry action="Run@NavBarToolbar" count="1" />
-      <entry action="Stop@RunnerToolbar" count="1" />
-    </counts>
-  </component>
-</application>
