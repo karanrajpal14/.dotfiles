@@ -30,6 +30,7 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
 	wget https://dl.google.com/android/repository/platform-tools-latest-linux.zip
+	unzip -d $HOME platform-tools-latest-linux.zip
 	chmod +x ~/platform-tools/adb
 	chmod +x ~/platform-tools/fastboot
 fi
