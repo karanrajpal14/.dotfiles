@@ -115,35 +115,5 @@ export TASTE_API_KEY="276915-TasteCom-FEYB0MN"
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-
-# Aliases
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias gcstore="git config credential.helper store"
-alias gccache="git config --global credential.helper 'cache --timeout 1800'"
-alias zconf="sudo subl ~/.zshrc"
-alias r="source ~/.zshrc"
-alias h="cd ~/"
-
-# Sudo fixes
-alias apt-get="sudo apt-get"
-alias apt="sudo apt"
-alias dpkg="sudo dpkg"
-alias subls="sudo subl"
-
-mcdir func(){
-	mkdir $1 && cd $1
-}
-function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-eval "$(ntfy shell-integration)"
-export PATH=$HOME/bin:$PATH
-
-eval $(thefuck --alias)
-
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-        source /etc/profile.d/vte.sh
-fi
 
 export PATH=~/.local/bin:$PATH
