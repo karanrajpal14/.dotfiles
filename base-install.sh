@@ -19,8 +19,8 @@ then
     apt dist-upgrade -y
 
     # Install Reqired packages
-    apt install curl git build-essential zsh exfat exfat-utils -y
-	ln -sv “~/.dotfiles/git/.gitconfig” ~
+    apt install curl build-essential zsh exfat-tools exfat-utils -y
+	ln -sv “$HOME/dotfiles/.gitconfig” $HOME
 fi
 
 ### ADB and Fastboot ###
