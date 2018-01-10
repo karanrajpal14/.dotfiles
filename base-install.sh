@@ -41,7 +41,7 @@ read -p "Do you want to install Android Studio? [y/n] " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-	apt-add-repository ppa:maarten-fonville/android-studio`
+	apt-add-repository ppa:maarten-fonville/android-studio
 	apt update
 	apt-get install android-studio -y
 fi
