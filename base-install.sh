@@ -19,7 +19,7 @@ then
     apt dist-upgrade -y
 
     # Install Reqired packages
-    apt install curl build-essential zsh exfat-fuse exfat-utils -y
+    apt install curl build-essential zsh exfat-fuse exfat-utils software-properties-common python-software-properties -y
 	ln -sv $HOME/dotfiles/.gitconfig $HOME
 fi
 
