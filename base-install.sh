@@ -71,6 +71,7 @@ then
 	apt autoremove
 	apt autoclean
 	curl -o- "https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh" | bash
+	export NVM_DIR="$HOME/.nvm"
 	export NODE_LATEST_LTS=$(nvm ls-remote | grep -P -o '(?<=v)[\d.]*(?=.*Latest LTS)' | tail -1)
 	echo "Installing NodeJS v$NODE_LATEST_LTS"
 	nvm install $NODE_LATEST_LTS
