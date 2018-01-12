@@ -72,24 +72,7 @@ then
 	apt autoclean
 	curl -o- "https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh" | bash
 	. $HOME/.bashrc
-	export NODE_LATEST_LTS=$(nvm ls-remote | grep -P -o '(?<=v)[\d.]*(?=.*Latest LTS)' | tail -1)
-	echo "Installing NodeJS v$NODE_LATEST_LTS"
-	nvm install $NODE_LATEST_LTS
-	nvm alias default $NODE_LATEST_LTS
-	node -v
-	npm install -g npm
-	npm -v
 fi
-
-### NPM Packages ###
-
-echo "Installing node packages"
-npm install -g npm-check
-npm install -g live-server
-npm install -g gulp
-npm install -g install-peerdeps
-npm install -g domain-cli
-npm install -g firebase-cli
 
 ### Golang ###
 ### Source -> https://github.com/canha/golang-tools-install-script
