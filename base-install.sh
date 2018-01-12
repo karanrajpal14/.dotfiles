@@ -65,7 +65,7 @@ fi
 
 read -p "Do you want to install NVM, NodeJS and NPM? [y/n] " -n 1 -r
 echo
-if [[ $REPLY =~ ^[Yy]$ ]]
+if [[ $REPLY =~ ^[git Yy]$ ]]
 then
 	apt-get purge nodejs
 	apt autoremove
@@ -83,7 +83,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
 	wget https://raw.githubusercontent.com/canha/golang-tools-install-script/master/goinstall.sh
 	zsh goinstall.sh --64
-	source ~/.zshrc
+	. $HOME/.bashrc
 fi
 
 ### Python, pip and Virtualenv ###
@@ -135,7 +135,7 @@ then
     ln -sv “~/dotfiles/.zshrc” ~
     
     # Update for now (only required if using zsh)
-    source ~/.zshrc
+    . $HOME/.zshrc
 fi
 
 ### Misc ###
