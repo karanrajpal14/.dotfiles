@@ -99,7 +99,7 @@ mkdir ~/.virtualenvs
 ### pip packages ###
 
 echo "Installing pip packages"
-pip3 install pip-review
+pip3 install pip-review youtube-dl
 
 #### ZSH ####
 
