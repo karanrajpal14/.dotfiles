@@ -82,7 +82,7 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
 	wget https://raw.githubusercontent.com/canha/golang-tools-install-script/master/goinstall.sh
-	zsh goinstall.sh --64
+	bash goinstall.sh --64
 	. $HOME/.bashrc
 fi
 
