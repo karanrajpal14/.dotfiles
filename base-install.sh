@@ -19,7 +19,7 @@ then
     apt dist-upgrade -y
 
     # Install Reqired packages
-    apt install curl build-essential zsh exfat-fuse exfat-utils software-properties-common python-software-properties -y
+    apt install curl build-essential exfat-fuse exfat-utils software-properties-common python-software-properties -y
 	ln -sv $HOME/dotfiles/.gitconfig $HOME
 fi
 
@@ -113,6 +113,10 @@ read -p "Do you want to install Zsh themes, scripts and plugins? [y/n] " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
+
+	# Install zsh
+	apt install zsh
+
     # Install Oh-My-Zsh
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
@@ -134,10 +138,10 @@ then
     sh -c "$(curl -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.zsh)"
 
     # Backup old .zshrc
-    mv ~/.zshrc ~/.zshrc_backup
+    mv $HOME/.zshrc $HOME/.zshrc_backup
 
     # Symlink .zshrc from dotfiles
-    ln -sv “~/dotfiles/.zshrc” ~
+    ln -sv $HOME/dotfiles/.zshrc $HOME
     
     # Update for now (only required if using zsh)
     . $HOME/.zshrc
