@@ -93,7 +93,7 @@ apt-get install python3-dev python3-pip python-dev python-pip -y
 sudo -H pip install --upgrade pip
 sudo -H pip3 install --upgrade pip
 sudo -H pip install --upgrade virtualenv
-sudo -H pip install --upgrade virtualenvwrappper
+sudo -H pip install --upgrade virtualenvwrapper
 mkdir ~/.virtualenvs
 
 ### pip packages ###
