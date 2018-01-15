@@ -132,7 +132,6 @@ then
 
     # Spaceship zsh theme
     sh -c "$(curl -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.zsh)"
-    curl -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.zsh | zsh
 
     # Backup old .zshrc
     mv ~/.zshrc ~/.zshrc_backup
