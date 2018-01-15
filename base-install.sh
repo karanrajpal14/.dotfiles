@@ -65,7 +65,7 @@ fi
 
 read -p "Do you want to install NVM, NodeJS and NPM? [y/n] " -n 1 -r
 echo
-if [[ $REPLY =~ ^[git Yy]$ ]]
+if [[ $REPLY =~ ^[Yy]$ ]]
 then
 	apt-get purge nodejs
 	apt autoremove
