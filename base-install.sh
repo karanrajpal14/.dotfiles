@@ -60,10 +60,10 @@ then
 	apt-get install sublime-text -y
 fi
 
-### NVM, NodeJS and NPM ###
+### NVM ###
 ### Source -> http://yoember.com/nodejs/the-best-way-to-install-node-js/
 
-read -p "Do you want to install NVM, NodeJS and NPM? [y/n] " -n 1 -r
+read -p "Do you want to install Node Version Manager? [y/n] " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
