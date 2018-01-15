@@ -88,18 +88,24 @@ fi
 
 ### Python, pip and Virtualenv ###
 
-echo "Installing Python, Python 3, pip and virtualenv"
-apt-get install python3-dev python3-pip python-dev python-pip -y
-sudo -H pip install --upgrade pip
-sudo -H pip3 install --upgrade pip
-sudo -H pip install --upgrade virtualenv
-sudo -H pip install --upgrade virtualenvwrapper
-mkdir ~/.virtualenvs
+read -p "Do you want to install Python, Python 3, pip and virtualenv? [y/n] " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+	apt-get install python3-dev python3-pip python-dev python-pip -y
+	sudo -H pip install --upgrade pip
+	sudo -H pip3 install --upgrade pip
+	sudo -H pip install --upgrade virtualenv virtualenvwrapper
+	echo "export VIRTUALENVWRAPPER_PYTHON=$(which python3)" >> ~/.bashrc
+	echo ". $(which virtualenvwrapper.sh)" >> ~/.bashrc
+	mkdir ~/.virtualenvs
+	echo "export WORKON_HOME=~/.virtualenvs" >> ~/.bashrc
+	. $HOME/.bashrc
 
-### pip packages ###
-
-echo "Installing pip packages"
-pip3 install pip-review youtube-dl
+	### pip packages ###
+	echo "Installing pip packages"
+	pip3 install pip-review youtube-dl
+fi
 
 #### ZSH ####
 
