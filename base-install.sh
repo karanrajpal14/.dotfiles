@@ -145,7 +145,7 @@ then
     ln -sv $HOME/dotfiles/.zshrc $HOME
     
     # Update for now (only required if using zsh)
-    . $HOME/.zshrc-
+    . $HOME/.zshrc
 fi
 
 ### Misc ###
