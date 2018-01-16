@@ -138,9 +138,6 @@ then
     # Zsh Alias Tips
     git clone https://github.com/djui/alias-tips.git ${ZSH}/custom/plugins/alias-tips
 
-    # Spaceship zsh theme
-    sh -c "$(curl -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.zsh)"
-
     # Backup old .zshrc
     mv $HOME/.zshrc $HOME/.zshrc_backup
 
