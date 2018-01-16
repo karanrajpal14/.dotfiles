@@ -119,33 +119,6 @@ then
 
     # Install Oh-My-Zsh
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-    # fzf for fuzzy searching the command line
-	# Source -> https://github.com/junegunn/fzf#installation
-    git clone --depth 1 https://github.com/junegunn/fzf.git ${ZSH}/custom/plugins/fzf
-    ${ZSH}/custom/plugins/fzf/install --bin
-
-	# fzf-zsh wrapper for oh-my-zsh
-	# Source -> https://github.com/Wyntau/fzf-zsh
-	git clone https://github.com/Treri/fzf-zsh.git ${ZSH}/custom/plugins/fzf-zsh
-
-    # Zsh-Autosuggestions
-    git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH/custom/plugins/zsh-autosuggestions
-
-    # Zsh-Syntax Highlighting
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH/custom/plugins/zsh-syntax-highlighting
-
-    # Zsh Alias Tips
-    git clone https://github.com/djui/alias-tips.git ${ZSH}/custom/plugins/alias-tips
-
-    # Backup old .zshrc
-    mv $HOME/.zshrc $HOME/.zshrc_backup
-
-    # Symlink .zshrc from dotfiles
-    ln -sv $HOME/dotfiles/.zshrc $HOME
-    
-    # Update for now (only required if using zsh)
-    . $HOME/.zshrc
 fi
 
 ### Misc ###
