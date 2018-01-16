@@ -115,7 +115,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
 
 	# Install zsh
-	apt install zsh
+	apt install zsh -y
 
     # Install Oh-My-Zsh
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -144,7 +144,7 @@ then
     ln -sv $HOME/dotfiles/.zshrc $HOME
     
     # Update for now (only required if using zsh)
-    . $HOME/.zshrc
+    . $HOME/.zshrc-
 fi
 
 ### Misc ###
