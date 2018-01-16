@@ -121,8 +121,13 @@ then
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
     # fzf for fuzzy searching the command line
-    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-    ~/.fzf/install
+	# Source -> https://github.com/junegunn/fzf#installation
+    git clone --depth 1 https://github.com/junegunn/fzf.git ${ZSH}/custom/plugins/fzf
+    ${ZSH}/custom/plugins/fzf/install --bin
+
+	# fzf-zsh wrapper for oh-my-zsh
+	# Source -> https://github.com/Wyntau/fzf-zsh
+	git clone https://github.com/Treri/fzf-zsh.git ${ZSH}/custom/plugins/fzf-zsh
 
     # Zsh-Autosuggestions
     git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH/custom/plugins/zsh-autosuggestions
