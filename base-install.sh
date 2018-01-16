@@ -136,8 +136,7 @@ then
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH/custom/plugins/zsh-syntax-highlighting
 
     # Zsh Alias Tips
-    cd ${ZSH_CUSTOM1:-$ZSH/custom}/plugins
-    git clone https://github.com/djui/alias-tips.git
+    git clone https://github.com/djui/alias-tips.git ${ZSH}/custom/plugins/alias-tips
 
     # Spaceship zsh theme
     sh -c "$(curl -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.zsh)"
